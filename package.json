@@ -1,0 +1,23 @@
+{
+  "name": "hacker-town-logistics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackerTown/HackerTownLogistics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HackerTown/HackerTownLogistics/issues"
+  },
+  "homepage": "https://github.com/HackerTown/HackerTownLogistics#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mysql": "^2.10.2"
+  }
+}
