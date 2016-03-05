@@ -5,5 +5,5 @@ module.exports.createHackathons = function(name,shortname,description,url,starts
 };
 
 module.exports.getHackathonById = function(id, callback) {
-	database.query("SELECT * FROM users WHERE id = " + (~~id), callback);
+	database.query("SELECT * FROM hackathons WHERE id = " + (~~id), callback);
 };
