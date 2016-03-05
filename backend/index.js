@@ -1,11 +1,13 @@
 var express = require('express');
 var app = express();
 var database = require('./database');
+var bodyParser = require('body-parser');
 
 var hackathons = require('./models/hackathons');
 
 
 app.use(express.static('../public'));
+app.use(bodyParser.json());
 
 app.get('/', function(req, res){
 	res.send('HackerTown');
