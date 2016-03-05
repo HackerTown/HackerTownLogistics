@@ -15,6 +15,7 @@ app.get('/', function(req, res){
 app.get('/api/hackathons/:hackathonId', function(req, res) {
 	console.log(req.params);
 	hackathons.getHackathonById(req.params.hackathonId, function(err,result){
+		console.log(err);
 		res.send(result);
 	});
 });
