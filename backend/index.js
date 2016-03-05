@@ -22,6 +22,14 @@ app.get('/api/hackathons/:hackathonId', function(req, res) {
 	});
 });
 
+app.post('/api/hackathons', function(req,res){
+	console.log(req.body);
+	hackathons.createHackathons(req.body.name, req.body.shortname, req.body.description, req.body.url, req.body.starts_at, req.body.ends_at), function(err,req){
+		res.send("okay");
+	}
+		;
+});
+
 app.listen(3000, function(){
 	console.log('HackerTown running at http://localhost:3000/');
 });
