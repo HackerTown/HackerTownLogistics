@@ -1,6 +1,6 @@
 var database = require("../database");
 
-module.exports.createHackathonAdmin = function(user_id, hackathon_id){
+module.exports.createHackathonAdmin = function(user_id, hackathon_id, callback){
 	database.query("INSERT INTO hackathon_admins SET ?",{user_id: user_id, hackathon_id: hackathon_id}, callback);
 };
 
