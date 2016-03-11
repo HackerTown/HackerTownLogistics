@@ -1,13 +1,13 @@
 # ************************************************************
 # Sequel Pro SQL dump
-# Version 4499
+# Version 4529
 #
 # http://www.sequelpro.com/
 # https://github.com/sequelpro/sequelpro
 #
-# Host: 127.0.0.1 (MySQL 10.1.8-MariaDB)
-# Database: hackertown
-# Generation Time: 2016-03-05 06:55:46 +0000
+# Host: 127.0.0.1 (MySQL 5.5.5-10.1.11-MariaDB)
+# Database: test
+# Generation Time: 2016-03-11 04:49:03 +0000
 # ************************************************************
 
 
@@ -76,6 +76,22 @@ CREATE TABLE `hackathons` (
   `url` varchar(200) DEFAULT NULL,
   `starts_at` int(11) DEFAULT NULL,
   `ends_at` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+# Dump of table users
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `users`;
+
+CREATE TABLE `users` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `school` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
