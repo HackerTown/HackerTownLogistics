@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.5-10.1.11-MariaDB)
 # Database: test
-# Generation Time: 2016-03-11 04:49:03 +0000
+# Generation Time: 2016-03-11 05:23:45 +0000
 # ************************************************************
 
 
@@ -92,6 +92,7 @@ CREATE TABLE `users` (
   `name` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `school` varchar(255) DEFAULT NULL,
+  `username` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
